@@ -1,0 +1,11 @@
+{
+	"title" : "Quality code for your ideas",
+	"description" : "WIP: We help you build the best in class mobile and web apps in the shortest time possible.",
+	"illustration" : "freelancing.svg",
+	"alt_text" : "Or see why we worth it",
+	"alt_href" : "#features",
+	"button" : {
+		"text" : "Contact",
+		"href" : "#contact"
+	}
+}

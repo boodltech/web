@@ -1,0 +1,13 @@
+language: go
+python: 3.6
+install:
+    - nvm install 12.13.1
+    - npm install yarn
+    - yarn global add  firebase-tools
+    - go get github.com/gohugoio/hugo
+    
+script:
+    - echo "skipping tests"
+    - HUGO_ENV=production hugo --gc --minify
+    - firebase use --token $firebase_key production
+    - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token "$FIREBASE_TOKEN"

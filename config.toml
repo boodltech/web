@@ -1,0 +1,4 @@
+baseURL = ""
+languageCode = "en-us"
+title = "boodl| boodl(idea) => reality"
+theme = "hugo-lime"
