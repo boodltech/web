@@ -1,5 +1,5 @@
 language: go
-python: 3.6
+go: 1.13.4
 install:
     - nvm install 12.13.1
     - npm install yarn
