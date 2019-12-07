@@ -16,3 +16,79 @@
 
 {{ partial "footer.html" . }}
 {{ partial "footer-end.html" . }}
+
+ 
+<script src="/__/firebase/7.5.2/firebase.js"></script> 
+<script src="/__/firebase/init.js"></script>
+
+ <script>
+	
+	const messaging = firebase.messaging();
+  
+  	messaging.onTokenRefresh(() => {getFCMToken()});
+	
+	function getFCMToken() {
+    messaging.getToken().then((currentToken) => {
+      if (currentToken) {
+        sendTokenToServer(currentToken);
+      } else {
+        console.log('No Instance ID token available. Request permission to generate one.');
+        setTokenSentToServer(false);
+      }
+    }).catch((err) => {
+      console.log('An error occurred while retrieving token. ', err);
+      showToken('Error retrieving Instance ID token. ', err);
+      setTokenSentToServer(false);
+    });
+  }
+
+
+
+	messaging.onMessage((payload) => {
+	  console.log('Message received. ', payload);
+	});
+  
+
+	function showToken(currentToken) {
+		console.log(currentToken);
+	}
+  
+	// Send the Instance ID token your application server, so that it can:
+	// - send messages back to this app
+	// - subscribe/unsubscribe the token from topics
+	function sendTokenToServer(currentToken) {
+	  // TODO:	add code to send the token to server
+	  // show it for now
+	  console.lof("TOKEN:"+currentToken)
+	  setTokenSentToServer(true)
+	}
+  
+	function isTokenSentToServer() {
+	  return window.localStorage.getItem('sentToServer') === '1';
+	}
+  
+	function setTokenSentToServer(sent) {
+	  window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+	}
+  
+  
+	function requestPermission() {
+	  console.log('Requesting permission...');
+	  Notification.requestPermission().then((permission) => {
+		if (permission === 'granted') {
+		  console.log('Notification permission granted.');
+		  getFCMToken();
+		} else {
+		  console.log('Unable to get permission to notify.');
+		}
+	  });
+	  // [END request_permission]
+	}
+  
+	  
+	
+  
+	getFCMToken();
+	requestPermission();
+  </script>
+  
