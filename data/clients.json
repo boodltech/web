@@ -1,18 +1,21 @@
 {
-  "title" : "Some of our awesome clients",
-  "description" : "These are just sample logos",
+  "title" : "Some of integrations we provide",
   "clients" : [
-    {
-      "title" : "Produthunt",
-      "image" : "producthunt.png"
-    },
     {
       "title" : "Google",
       "image" : "google.png"
     },
     {
-      "title" : "Facebook",
-      "image" : "facebook.png"
+      "title" : "Stripe",
+      "image" : "stripe.png"
+    },
+    {
+      "title" : "Twillio",
+      "image" : "twillio.png"
+    },
+    {
+      "title" : "Slack",
+      "image" : "Slack_RGB.png"
     }
   ]
 }

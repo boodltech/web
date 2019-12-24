@@ -1,9 +1,7 @@
 {
 	"title" : "Quality code for your ideas",
-	"description" : "WIP: We help you build the best in class mobile and web apps in the shortest time possible.",
+	"description" : "We believe your idea can be translated into a beautiful piece of code, without dampening its essence and sacrificing the quality.",
 	"illustration" : "freelancing.svg",
-	"alt_text" : "Or see why we worth it",
-	"alt_href" : "#features",
 	"button" : {
 		"text" : "Contact",
 		"href" : "#contact"

@@ -1,6 +1,6 @@
 {
   "title" : "Our Services",
-  "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis mollis nisi, a tempor mi fermentum eget. Duis sed pulvinar justo.",
+  "description" : "Sometimes,  all your business needs to propel higher is a missing jigsaw piece. And, if it falls within the realms of digital,  we are your ideal partner. We help organizations stitch together unique, creative applications for web and mobile in an agile fashion.",
   "content" : [
     {
       "icon" : "bell",
@@ -13,9 +13,9 @@
       "description" : "We help you craft a functional and high-performing apps and websites through our effective mobile and web development services."
     },
     {
-      "icon" : "",
-      "title" : "Digital Marketing",
-      "description" : "Enhance your reach and make more customers fall for you with our well-planned and strategized marketing solutions."
+      "icon" : "object-ungroup",
+      "title" : "Custom Integrations",
+      "description" : "Integrate third party APIs, webhook, payment gateway and services"
     }
   ]
 }

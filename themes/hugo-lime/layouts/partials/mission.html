@@ -1,0 +1,13 @@
+{{ $mission := .Site.Data.mission }}
+<section id="mission" class="py-5">
+  <div class="container text-center">
+    <h2 class="pt-5 h2">{{ $mission.title }}</h2>
+    <p class="text-muted pb-5">{{ $mission.description }}</p>
+  </div>
+</section>
+
+<style type="text/css">
+  #mission{
+    /* background: linear-gradient(165deg, #ffffff 0%,#ffffff 45%,#fc5f3c 45%,#ff55d3 90%, #ffffff 90%, #ffffff 100%); */
+  }
+</style>

@@ -2,10 +2,9 @@
 	"components" : [
 		"cover",
 		"features",
-		"pricing",
-		"team",
+		"mission",
 		"clients",
 		"contact"
 	],
-	"email" : "mjvkablk"
+	"email" : "hi@boodl.tech"
 }
